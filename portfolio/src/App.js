@@ -6,12 +6,15 @@ import Header from './components/Header';
 import Home from './components/pages/Home';
 import Projects from './components/pages/Projects';
 import { Routes,Route } from 'react-router-dom';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 
 function App() {
   return (
   <div>
-    <Home/>
+    <ParallaxProvider>
+      <Home/>
+    </ParallaxProvider>
     <Projects/>
   </div>
   );
