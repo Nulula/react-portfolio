@@ -31,17 +31,17 @@ const styles = {
 function Home() {
     return (
             <>
-                    <div className="container-fluid home">
-                        <div className="jumbotron container-fluid rounded-0" style={styles.jumbotron}>
-                           <div className = "welcome sticky-top">
+                <div className="container-fluid home">
+                    <div className="jumbotron container-fluid rounded-0" style={styles.jumbotron}>
+                        <div className = "welcome sticky-top">
                             <h1 className="m-5 p-lg-5 p-md-5 p-sm-0 m-sm-0" style = {styles.h1}>Marta Perlinska</h1>
-                            <div className="row m-0">
+                        <div className="row m-0">
                             <p className="col-lg-6 col-md-8 display-4 p-2 ml-5 rounded" style={styles.p}>Hi! Let's code something together</p>
-                            </div>
-                            </div>
-                            <NavTabs />
                         </div>
+                        </div>
+                        <NavTabs />
                     </div>
+                </div>
             </>
     )
 };
