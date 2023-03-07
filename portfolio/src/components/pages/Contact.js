@@ -1,37 +1,66 @@
 import React from 'react';
-import BackgroundImg from '../../assets/bg.jpg';
+import Background from '../../assets/bg.jpg';
+import Palette from '../Palette';
+import Header from '../Header';
+import '../MediaQueries.css';
+
+const styles = {
+    jumbotron: {
+        backgroundImage: `url(${Background})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        height: "120vh",
+        marginTop: "0"
+  },
+    h1: {
+        color: `${Palette.dark.desertSand}`,
+        fontSize: "4em",
+        textShadow: `0 0 10px ${Palette.light.cornsilk})`,
+        fontWeight: "bolder"
+  },
+    p: {
+        color: `${Palette.dark.peach}`,
+        backgroundColor: `${Palette.light.sunset2},0.8`,
+        whiteSpace: "pre-wrap"
+  }
+
+};
 
 function Contact() {
-    return(
+    return (
         <>
-        <div className="parallax" style="
-        div {
-            height: 100%;
-          }
-          
-          .parallax {
-            /* The image used */
-            background-image: url(${BackgroundImg});
-          
-            /* Full height */
-            height: 100%; 
-          
-            /* Create the parallax scrolling effect */
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            "></div>
-
-            <div style="height:1000px;background-color:red;font-size:36px">
-            Scroll Up and Down this page to see the parallax scrolling effect.
-            This div is just here to enable scrolling.
-            Tip: Try to remove the background-attachment property to remove the scrolling effect.
+            <div className="container-fluid home">
+                <div className="jumbotron container-fluid rounded-0" style={styles.jumbotron}>
+                        <div className = "welcome sticky-top">
+                        <h1 className="
+                        p-lg-5 
+                        p-md-5 
+                        p-sm-0
+                        p-xs-0
+                        " style = {styles.h1}>Contact</h1>
+<form className="form">
+          <input
+            value={this.state.firstName}
+            name="firstName"
+            onChange={this.handleInputChange}
+            type="text"
+            placeholder="First Name"
+          />
+          <input
+            value={this.state.lastName}
+            name="lastName"
+            onChange={this.handleInputChange}
+            type="text"
+            placeholder="Last Name"
+          />
+          <button onClick={this.handleFormSubmit}>Submit</button>
+        </form>
+                        </div>
+                    <Header />
+                </div>
             </div>
-
-        <div className="parallax"></div>
         </>
     )
-}
+};
 
 export default Contact;
