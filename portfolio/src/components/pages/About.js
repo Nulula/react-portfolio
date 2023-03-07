@@ -1,9 +1,8 @@
 import React from 'react';
 import Background from '../../assets/bg.jpg';
 import Palette from '../Palette';
-import NavTabs from '../NavTabs';
+import Header from '../Header';
 import '../MediaQueries.css';
-import Contact from './Contact';
 
 const styles = {
     jumbotron: {
@@ -50,7 +49,7 @@ function About() {
                                     <div className="col-lg-3"></div>
                                 </div>
                             </div>
-                        <NavTabs />
+                        <Header />
                     </div>
                 </div>
             </>

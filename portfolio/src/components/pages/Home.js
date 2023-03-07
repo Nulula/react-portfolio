@@ -1,9 +1,7 @@
 import React from 'react';
-import { useParallax, ParallaxProvider } from 'react-scroll-parallax';
-import Header from '../Header';
 import Background from '../../assets/bg.jpg';
 import Palette from '../Palette';
-import NavTabs from '../NavTabs';
+import Header from '../Header';
 import '../MediaQueries.css';
 
 const styles = {
@@ -39,7 +37,7 @@ function Home() {
                             <p className="col-lg-6 col-md-8 display-4 p-2 ml-5 rounded" style={styles.p}>Hi! Let's code something together</p>
                         </div>
                         </div>
-                        <NavTabs />
+                        <Header />
                     </div>
                 </div>
             </>
