@@ -1,0 +1,7 @@
+.h1,
+.p {
+    @media (max-width: 480px) {
+        margin: 0, auto;
+        padding: 0, auto
+}
+}
